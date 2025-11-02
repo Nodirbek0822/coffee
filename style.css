@@ -953,3 +953,231 @@ footer {
     justify-content: center;
   }
 }
+
+/* subscribe html start */
+.subscribe__intro__main {
+  background-image: url("./image/Bitmap\ copy.png");
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: cover;
+  color: var(--light);
+  border-radius: 10px;
+
+  padding: 134px 85px;
+}
+.subscribe__intro__main h1 {
+  color: var(--light);
+  font-size: 72px;
+  line-height: 72px;
+  font-weight: 900;
+  font-family: var(--fran);
+  margin-bottom: 32px;
+}
+.subscribe__intro__main p {
+  font-size: 16px;
+  line-height: 26px;
+  font-family: var(--barlow);
+  max-width: 445px;
+}
+@media (max-width: 960px) {
+  .subscribe__intro__main {
+    padding: 127px 58px;
+    /* margin-bottom: 144px; */
+  }
+
+  .subscribe__intro__main h1 {
+    max-width: 329px;
+    font-size: 48px;
+    line-height: 48px;
+  }
+
+  .subscribe__intro__main p {
+    font-size: 15px;
+    line-height: 25px;
+    max-width: 398px;
+  }
+}
+@media (max-width: 680px) {
+  .subscribe__intro__main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 100px 24px 136px 24px;
+  }
+
+  .subscribe__intro__main h1 {
+    max-width: 279px;
+    font-size: 40px;
+    line-height: 40px;
+    text-align: center;
+  }
+
+  .subscribe__intro__main p {
+    max-width: 279px;
+    text-align: center;
+  }
+}
+.tanishtiriuv__main {
+  background: var(--darkGreyBlue);
+  padding: 100px 150px 100px 85px;
+  border-radius: 10px;
+  margin-top: 200px;
+}
+.lines span {
+  display: inline-block;
+  width: 31px;
+  height: 31px;
+  border: 2px solid #0e8784;
+  border-radius: 100%;
+  margin-bottom: -15px;
+  margin-inline: -15px;
+}
+.lines {
+  max-width: 760px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid #fdd6ba;
+}
+.tanishtiriuv__text h2,
+p {
+  color: var(--light);
+}
+@media (max-width: 680px) {
+  .lines {
+    visibility: hidden;
+  }
+}
+.acardionsa {
+  display: flex;
+  gap: 125px;
+  margin-top: 150px;
+}
+.accordion__cards {
+  display: flex;
+  /* justify-content: space-between; */
+  gap: 23px;
+  /* margin-top: 56px; */
+}
+.accordion__card {
+  padding: 32px 28px 84px 28px;
+  background-color: #f4f1eb;
+  border-radius: 10px;
+  transition: 0.6s;
+}
+.accordion__card:hover {
+  background-color: var(--pale);
+}
+.accordion__card h1 {
+  font-family: var(--fran);
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 32px;
+  color: var(--darkGreyBlue);
+  margin-bottom: 24px;
+}
+.accordion__card p {
+  font-family: var(--barlow);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: var(--darkGreyBlue);
+  max-width: 172px;
+}
+.yashil {
+  padding: 32px 28px 84px 28px;
+  background-color: #0e8784;
+  border-radius: 10px;
+  color: var(--light) !important;
+}
+.yashil h1,
+.yashil p {
+  color: var(--light);
+}
+.menu {
+  max-width: 255px;
+  width: 100%;
+}
+.ahdh {
+  max-width: 740px;
+  width: 100%;
+  position: relative;
+}
+.links:active a:hover {
+  color: red;
+  background-color: blue;
+}
+.accordion-button {
+}
+.links {
+  display: flex;
+  gap: 28px;
+}
+.ajaralgan {
+  color: #0e8784;
+}
+.order {
+  padding: 27px 64px;
+  background-color: var(--darkGreyBlue);
+  border-radius: 10px;
+  margin-top: 85px;
+}
+.order h2 {
+  font-family: var(--barlow);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #ffffff;
+  opacity: 50%;
+  margin-bottom: 24px;
+}
+.order h1 {
+  font-family: var(--fran);
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 40 px;
+  color: #ffffff;
+  max-width: 600px;
+}
+.order span {
+  font-family: var(--fran);
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 40 px;
+  color: var(--darkCyan);
+  max-width: 600px;
+}
+.order__btn {
+  margin-top: 40px;
+  position: absolute;
+  right: 0;
+}
+@media (max-width: 960px) {
+  .accordion__cards {
+    gap: 10;
+  }
+  .menu {
+    visibility: hidden;
+    display: none;
+  }
+
+  .ahdh {
+    max-width: 690px;
+    width: 100%;
+    position: relative;
+  }
+  .order__btn {
+    position: absolute;
+
+    right: 37%;
+  }
+}
+@media (max-width: 680px) {
+  .accordion__cards {
+    flex-direction: column;
+  }
+  .order__btn {
+    position: absolute;
+    right: 26%;
+  }
+}
