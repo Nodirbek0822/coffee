@@ -867,7 +867,7 @@ footer {
   }
   .quality__main {
     background-color: var(--darkGreyBlue);
-    padding: 145px 100px;
+    padding: 145px 24px 61px 24px;
   }
   .quality__main h1 {
     font-size: 28px;
