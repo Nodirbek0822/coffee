@@ -1187,6 +1187,10 @@ p {
   .buyrutma {
     align-items: center;
   }
+  .tanishtiriuv__text {
+    text-align: center;
+    max-width: 327px;
+  }
 }
 .accordion {
   border: none !important;
