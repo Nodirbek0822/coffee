@@ -550,11 +550,16 @@ nav a:hover {
 }
 
 @media (max-width: 680px) {
+  .work {
+    text-align: center;
+  }
   .work__cards {
     flex-direction: column;
     gap: 56px;
   }
-
+  .pattern {
+    display: none;
+  }
   .work__card h1 {
     text-align: center;
   }
@@ -955,14 +960,16 @@ footer {
 }
 
 /* subscribe html start */
+.subscribe__intro {
+  padding-inline: 24px;
+}
 .subscribe__intro__main {
   background-image: url("./image/Bitmap\ copy.png");
   background-repeat: no-repeat;
-  background-position: right;
+  background-position: center;
   background-size: cover;
   color: var(--light);
   border-radius: 10px;
-
   padding: 134px 85px;
 }
 .subscribe__intro__main h1 {
@@ -1120,7 +1127,7 @@ p {
   padding: 27px 64px;
   background-color: var(--darkGreyBlue);
   border-radius: 10px;
-  margin-top: 85px;
+  margin-block: 85px 40px;
 }
 .order h2 {
   font-family: var(--barlow);
@@ -1147,11 +1154,13 @@ p {
   color: var(--darkCyan);
   max-width: 600px;
 }
-.order__btn {
-  margin-top: 40px;
-  position: absolute;
-  right: 0;
+.buyrutma {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: end;
 }
+
 @media (max-width: 960px) {
   .accordion__cards {
     gap: 10;
@@ -1166,18 +1175,46 @@ p {
     width: 100%;
     position: relative;
   }
-  .order__btn {
-    position: absolute;
-
-    right: 37%;
+  .buyrutma {
+    align-items: center;
   }
 }
 @media (max-width: 680px) {
   .accordion__cards {
     flex-direction: column;
   }
-  .order__btn {
-    position: absolute;
-    right: 26%;
+
+  .buyrutma {
+    align-items: center;
   }
+}
+.accordion {
+  border: none !important;
+}
+.accordion-button:not(.collapsed) {
+  background-color: transparent !important;
+}
+.accordion-button:focus {
+  box-shadow: none !important;
+}
+.accordion-item {
+  color: transparent !important;
+  border: none !important;
+  background-color: transparent !important;
+}
+.links {
+  font-family: var(--fran);
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 32px;
+  color: var(--darkGreyBlue);
+  opacity: 0.6;
+}
+.links:last-child {
+  color: var(--darkGreyBlue) !important;
+}
+.list-group-item {
+  border: none !important;
+  border-bottom: 1px solid var(--grey) !important;
+  padding-bottom: 24px !important;
 }
