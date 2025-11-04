@@ -1136,6 +1136,7 @@ p {
   line-height: 26px;
   color: #ffffff;
   opacity: 50%;
+  text-transform: uppercase;
   margin-bottom: 24px;
 }
 .order h1 {
@@ -1200,6 +1201,14 @@ p {
 }
 .accordion-button:focus {
   box-shadow: none !important;
+  color: var(--grey);
+}
+.accordion-button {
+  font-family: var(--fran) !important;
+  font-weight: 400;
+  line-height: 48px;
+  font-size: 40px;
+  color: var(--grey);
 }
 .accordion-item {
   color: transparent !important;
@@ -1221,4 +1230,18 @@ p {
   border: none !important;
   border-bottom: 1px solid var(--grey) !important;
   padding-bottom: 24px !important;
+}
+.accordion__card h1 {
+  font-family: var(--fran);
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 32px;
+  color: var(--darkGreyBlue);
+}
+.accordion__card p {
+  font-family: var(--barlow);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: var(--darkGreyBlue);
 }
